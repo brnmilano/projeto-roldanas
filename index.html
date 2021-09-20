@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu primeiro Programa!</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <h1>Olá, mundo!</h1>
+  <p>Esse é o projeto para fazer pedidos de roldanas!</p>
+
+
+  <script>
+
+    const cincoOitavoU = Number(prompt("Quantas roldanas de 5/8 canal U você quer?")); //R$10,00
+    const duasMeiaU = Number(prompt("Quantas roldanas de 2/1 canal U você quer?")); //R$5,00
+    const cincoOitavoV = Number(prompt("Quantas roldanas de 5/8 canal V você quer?")); //R$25,00
+    const duasMeiaV = Number(prompt("Quantas roldanas de 2/1 canal V você quer?")); //R$15,00
+
+    const totalPedido = cincoOitavoU + duasMeiaU + cincoOitavoV + duasMeiaV;
+
+    const pedido1 = cincoOitavoU;
+    const pedido2 = duasMeiaU;
+    const pedido3 = cincoOitavoV;
+    const pedido4 = duasMeiaV;
+
+    const precos = {
+      valorCincoOitavoU: 10,
+      valorDuasMeiaU: 5,
+      valorCincoOitavoV: 25,
+      valorDuasMeiaV: 15,
+    }
+
+    const valorTotalCicoOitavoU = cincoOitavoU * precos.valorCincoOitavoU;
+    const valorTotalDuasMeiaU = duasMeiaU * precos.valorDuasMeiaU;
+    const valorTotalCicoOitavoV = cincoOitavoV * precos.valorCincoOitavoV;
+    const valorTotalDuasMeiaV = duasMeiaV * precos.valorDuasMeiaV;
+
+    const valorPedido = valorTotalCicoOitavoU + valorTotalDuasMeiaU + valorTotalCicoOitavoV + valorTotalDuasMeiaV;
+
+
+    document.write(`Você pediu ${pedido1} roldanas de 5/8 canal U.
+    Cada peça custa ${precos.valorCincoOitavoU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}! <br>
+    O valor dessa compra é: ${valorTotalCicoOitavoU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })} <br><br>`);
+
+    document.write(`Você pediu ${pedido2} roldanas de 2/1 canal U.
+    Cada peça custa ${precos.valorDuasMeiaU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}!<br>
+    O valor dessa compra é: ${valorTotalDuasMeiaU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })} <br><br>`);
+
+    document.write(`Você pediu ${pedido3} roldanas de 5/8 canal V.
+    Cada peça custa ${precos.valorCincoOitavoV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}! <br>
+    O valor dessa compra é: ${valorTotalCicoOitavoV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })} <br><br>`);
+
+    document.write(`Você pediu ${pedido4} roldanas de 2/1 canal V.
+    Cada peça custa ${precos.valorDuasMeiaV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}! <br>
+    O valor dessa compra é: ${valorTotalDuasMeiaV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })} <br><br>`);
+
+    document.write(`O valor total do seu pedido foi: ${valorPedido.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}`);
+    document.write(`Você vai receber ${totalPedido} peças diretamente na sua residência!<br>`);
+
+  </script>
+</body>
+
+</html>
