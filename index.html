@@ -2,11 +2,11 @@
 <html lang="pt-br">
 
 <head>
+  <link rel="stylesheet" href="./CSS/style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu primeiro Programa!</title>
-  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Faça seu pedido!</title>
 </head>
 
 <body>
@@ -43,24 +43,24 @@
     const valorPedido = valorTotalCicoOitavoU + valorTotalDuasMeiaU + valorTotalCicoOitavoV + valorTotalDuasMeiaV;
 
 
-    document.write(`Você pediu ${pedido1} roldanas de 5/8 canal U.
+    document.write(`Você pediu <strong>${pedido1}</strong> roldanas de 5/8 canal U.
     Cada peça custa ${precos.valorCincoOitavoU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}! <br>
-    O valor dessa compra é: ${valorTotalCicoOitavoU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })} <br><br>`);
+    O valor dessa compra é: <strong>${valorTotalCicoOitavoU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</strong> <br><br>`);
 
-    document.write(`Você pediu ${pedido2} roldanas de 2/1 canal U.
+    document.write(`Você pediu <strong>${pedido2}</strong> roldanas de 2/1 canal U.
     Cada peça custa ${precos.valorDuasMeiaU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}!<br>
-    O valor dessa compra é: ${valorTotalDuasMeiaU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })} <br><br>`);
+    O valor dessa compra é: <strong>${valorTotalDuasMeiaU.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</strong> <br><br>`);
 
-    document.write(`Você pediu ${pedido3} roldanas de 5/8 canal V.
+    document.write(`Você pediu <strong>${pedido3}</strong> roldanas de 5/8 canal V.
     Cada peça custa ${precos.valorCincoOitavoV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}! <br>
-    O valor dessa compra é: ${valorTotalCicoOitavoV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })} <br><br>`);
+    O valor dessa compra é: <strong>${valorTotalCicoOitavoV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</strong> <br><br>`);
 
-    document.write(`Você pediu ${pedido4} roldanas de 2/1 canal V.
+    document.write(`Você pediu <strong>${pedido4}</strong> roldanas de 2/1 canal V.
     Cada peça custa ${precos.valorDuasMeiaV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}! <br>
-    O valor dessa compra é: ${valorTotalDuasMeiaV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })} <br><br>`);
+    O valor dessa compra é: <strong>${valorTotalDuasMeiaV.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</strong> <br><br>`);
 
-    document.write(`O valor total do seu pedido foi: ${valorPedido.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}`);
-    document.write(`Você vai receber ${totalPedido} peças diretamente na sua residência!<br>`);
+    document.write(`O valor total do seu pedido foi: <strong>${valorPedido.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</strong><br>`);
+    document.write(`Você vai receber <strong>${totalPedido}</strong> peças diretamente na sua residência!`);
 
   </script>
 </body>

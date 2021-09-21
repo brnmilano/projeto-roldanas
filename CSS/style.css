@@ -8,3 +8,9 @@ body {
 h1 {
   color: rgb(238, 0, 238);
 }
+
+p{
+  font-family: 'Fleur De Leah' !important;
+  font-size: 33px;
+  font-style: italic;
+}
